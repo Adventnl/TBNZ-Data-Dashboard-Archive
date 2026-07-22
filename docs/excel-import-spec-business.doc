@@ -1,0 +1,198 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Arial;}}
+\viewkind4\uc1\pard\f0\fs22
+\par\b\fs34 Excel \u25968?\u25454?\u25509?\u20837?\u22635?\u-30616?\u-29708?\u26126?\u20070?\u-248?\u19994?\u21153?\u29256?\u-247?\b0\fs22\par
+\par
+\par \u26412?\u25991?\u26723?\u29992?\u20110?\u25353?\u32479?\u19968?\u26684?\u24335?\u22635?\u25253? Excel\u-244?\u24182?\u-28646?\u-28729?\u21518?\u31471?\u25509?\u21475?\u23548?\u20837?\u31995?\u32479?\u12290?
+\par
+\par\li720\tx720 \u8226?\tab \u-28670?\u29992?\u25509?\u21475?\u-230?POST /api/import/upload\li0
+\par\li720\tx720 \u8226?\tab \u25903?\u25345?\u25991?\u20214?\u-230?.xlsx\u12289?.xlsm\li0
+\par\li720\tx720 \u8226?\tab \u19978?\u20256?\u26041?\u24335?\u-230?\u21333?\u25991?\u20214?\u19978?\u20256?\u-248?1 \u20010? Excel \u20869?\u21547?\u22810?\u20010? sheet\u-247?\li0
+\par\li720\tx720 \u8226?\tab \u27169?\u26495?\u19979?\u-28803?\u-248?3 \u24352?\u-30616?\u-244?\u20165?\u-30616?\u22836?\u-247?\u-230?[excel-import-template-3-sheets.xlsx](excel-import-template-3-sheets.xlsx)\li0
+\par
+\par\b\fs30 1. \u24635?\u20307?\u22635?\u25253?\u-30268?\u-31997?\b0\fs22\par
+\par
+\par\b\fs26 1.1 \u24037?\u20316?\u31807?\u32467?\u26500?\b0\fs22\par
+\par
+\par \u24403?\u21069?\u29256?\u26412?\u24314?\u-29778?\u19968?\u20010?\u25991?\u20214?\u21253?\u21547?\u20197?\u19979? 3 \u20010?\u26631?\u20934? sheet\u-248?\u21517?\u31216?\u24314?\u-29778?\u23436?\u20840?\u19968?\u-32268?\u-247?\u-230?
+\par
+\par\b sheet \u21517?\tab | \tab \u29992?\u-28652?\tab | \tab \u26368?\u20302?\u24517?\u22635?\u23383?\u27573?\b0
+\par customers\tab | \tab \u23458?\u25143?\u20027?\u26723?\tab | \tab uid, name
+\par transactions\tab | \tab \u20132?\u26131?\u27969?\u27700?\tab | \tab uid, trade_amount
+\par customer_assets\tab | \tab \u23458?\u25143?\u26376?\u24230?\u-29372?\u20135?\u24555?\u29031?\tab | \tab uid, month
+\par
+\par
+\par \u-29708?\u26126?\u-230?
+\par
+\par\li720\tx720 \u8226?\tab \u21487?\u21482?\u19978?\u20256?\u20854?\u20013?\u-28440?\u20998? sheet\u-248?\u19981?\u24378?\u21046?\u24517?\u-26501? 3 \u24352?\u-28419?\u25552?\u20379?\u-247?\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u21482?\u-30335?\u26576?\u24352? sheet \u30340?\u24517?\u22635?\u23383?\u27573?\u-24752?\u20840?\u-244?\u31995?\u32479?\u23601?\u20250?\u23548?\u20837?\u-29723? sheet\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u26080?\u27861?\u-29754?\u21035?\u25110?\u23383?\u27573?\u32570?\u22833?\u30340? sheet \u20250?\u-30549?\u-29197?\u-28729?\u-244?\u24182?\u22312?\u23548?\u20837?\u32467?\u26524? summary \u-28212?\u25253?\u-27367?\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u25490?\u21517?\u-248?Top 200/Top 500\u-247?\u20250?\u22312?\u21518?\u31471?\u22522?\u20110? customer_assets \u-32278?\u21160?\u-29791?\u31639?\u-244?\u26080?\u-26880?\u21333?\u29420?\u25552?\u20132? rankings sheet\u12290?\li0
+\par\li720\tx720 \u8226?\tab activities\u12289?activity_tracking \u30446?\u21069?\u20808?\u19981?\u32435?\u20837?\u19994?\u21153?\u22635?\u25253?\u-31997?\u22260?\u12290?\li0
+\par
+\par\b\fs26 1.2 \u-28646?\u29992?\u26684?\u24335?\u-30335?\u27714?\b0\fs22\par
+\par
+\par\li720\tx720 \u8226?\tab \u31532?\u19968?\u-30644?\u24517?\u-26501?\u26159?\u23383?\u27573?\u21517?\u-248?\u-30616?\u22836?\u-247?\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u19981?\u-30335?\u21512?\u24182?\u21333?\u20803?\u26684?\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u19981?\u-30335?\u30041?\u20840?\u31354?\u-30644?\u12289?\u20840?\u31354?\u21015?\u-248?\u31995?\u32479?\u20250?\u-32278?\u21160?\u28165?\u29702?\u-244?\u20294?\u24314?\u-29778?\u19994?\u21153?\u20391?\u-28545?\u20813?\u-247?\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u26085?\u26399?\u24314?\u-29778?\u32479?\u19968?\u22635? YYYY-MM-DD\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u26376?\u20221?\u24314?\u-29778?\u32479?\u19968?\u22635? YYYY-MM\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u25968?\u20540?\u21015?\u19981?\u-30335?\u22635?\u20013?\u25991?\u25110?\u-29708?\u26126?\u25991?\u23383?\u-248?\u20363?\u22914?\u8220?\u32422? 10 \u19975?\u8221?\u-247?\u12290?\li0
+\par
+\par\b\fs26 1.3 \u-28211?\u22797?\u-30644?\u22788?\u29702?\u-248?\u-28211?\u-30335?\u-247?\b0\fs22\par
+\par
+\par \u31995?\u32479?\u25353?\u19994?\u21153?\u20027?\u-27346?\u20570? upsert\u-248?\u26377?\u21017?\u26356?\u26032?\u-244?\u26080?\u21017?\u26032?\u22686?\u-247?\u-230?
+\par
+\par\b sheet \u21517?\tab | \tab \u21435?\u-28211?/\u26356?\u26032?\u-27346?\b0
+\par customers\tab | \tab uid
+\par transactions\tab | \tab \u20248?\u20808? transaction_id\u-229?\u-32027?\u32570?\u22833?\u21017?\u-28672?\u21270?\u21040?\u20132?\u26131?\u32452?\u21512?\u-27346?
+\par customer_assets\tab | \tab uid + month
+\par
+\par
+\par\b\fs30 2. \u26631?\u20934?\u23383?\u27573?\u23450?\u20041?\u-248?\u19994?\u21153?\u22635?\u25253?\u21015?\u-247?\b0\fs22\par
+\par
+\par \u20197?\u19979?\u20026?\u24314?\u-29778?\u19994?\u21153?\u25353?\u8220?\u26631?\u20934?\u21015?\u21517?\u8221?\u30452?\u25509?\u22635?\u25253?\u12290?
+\par
+\par
+\par
+\par\b\fs30 2.1 customers\u-248?\u23458?\u25143?\u20027?\u26723?\u-247?\b0\fs22\par
+\par
+\par\b\fs26 \u24517?\u22635?\b0\fs22\par
+\par
+\par\b \u23383?\u27573?\u21517?\tab | \tab \u31867?\u22411?\tab | \tab \u-29708?\u26126?\tab | \tab \u31034?\u20363?\b0
+\par uid\tab | \tab \u25991?\u26412?\tab | \tab \u23458?\u25143?\u21807?\u19968?\u26631?\u-29754?\tab | \tab 10001
+\par name\tab | \tab \u25991?\u26412?\tab | \tab \u23458?\u25143?\u22995?\u21517?\tab | \tab Alice Wang
+\par
+\par
+\par\b\fs26 \u25512?\u-31920?\u21487?\u-28663?\b0\fs22\par
+\par
+\par\b \u23383?\u27573?\u21517?\tab | \tab \u31867?\u22411?\tab | \tab \u-29708?\u26126?\tab | \tab \u31034?\u20363?\b0
+\par client_id\tab | \tab \u25991?\u26412?\tab | \tab \u23458?\u25143?\u32534?\u21495?\tab | \tab C001
+\par age\tab | \tab \u25972?\u25968?\tab | \tab \u24180?\u-24700?\tab | \tab 32
+\par gender\tab | \tab \u25991?\u26412?\tab | \tab \u24615?\u21035?\u-248?\u24314?\u-29778? M/F\u-247?\tab | \tab F
+\par location\tab | \tab \u25991?\u26412?\tab | \tab \u22478?\u24066?/\u22320?\u21306?\tab | \tab Auckland
+\par nationality\tab | \tab \u25991?\u26412?\tab | \tab \u22269?\u31821?\tab | \tab NZ
+\par monthly_net_assets_usd\tab | \tab \u25968?\u20540?\tab | \tab \u26376?\u24230?\u20928?\u-29372?\u20135?\u-248?USD\u-247?\tab | \tab 125000
+\par monthly_trade_count\tab | \tab \u25972?\u25968?\tab | \tab \u26376?\u20132?\u26131?\u27425?\u25968?\tab | \tab 12
+\par trade_category\tab | \tab \u25991?\u26412?\tab | \tab \u20027?\u20132?\u26131?\u21697?\u31867?\tab | \tab stock
+\par stocks_pct\tab | \tab \u25968?\u20540?\tab | \tab \u-32607?\u31080?\u-28339?\u32622?\u27604?\u20363?\tab | \tab 45
+\par options_pct\tab | \tab \u25968?\u20540?\tab | \tab \u26399?\u26435?\u-28339?\u32622?\u27604?\u20363?\tab | \tab 25
+\par futures_pct\tab | \tab \u25968?\u20540?\tab | \tab \u26399?\u-29401?\u-28339?\u32622?\u27604?\u20363?\tab | \tab 15
+\par funds_pct\tab | \tab \u25968?\u20540?\tab | \tab \u22522?\u-28207?\u-28339?\u32622?\u27604?\u20363?\tab | \tab 15
+\par
+\par
+\par \u-24872?\u-29788?\u-30644?\u20026?\u-230?
+\par
+\par\li720\tx720 \u8226?\tab monthly_net_assets_usd\u12289?monthly_trade_count \u32570?\u22833?\u26102?\u25353? 0 \u22788?\u29702?\u12290?\li0
+\par\li720\tx720 \u8226?\tab client_type\u12289?tags\u12289?signal_description\u12289?recommended_action \u19981?\u20877?\u30001?\u19994?\u21153?\u20391?\u22635?\u25253?\u-244?\u21518?\u31471?\u20250?\u22522?\u20110?\u31639?\u27861?\u-32278?\u21160?\u29983?\u25104?\u12290?\li0
+\par
+\par
+\par
+\par\b\fs30 2.2 transactions\u-248?\u20132?\u26131?\u27969?\u27700?\u-247?\b0\fs22\par
+\par
+\par\b\fs26 \u24517?\u22635?\b0\fs22\par
+\par
+\par\b \u23383?\u27573?\u21517?\tab | \tab \u31867?\u22411?\tab | \tab \u-29708?\u26126?\tab | \tab \u31034?\u20363?\b0
+\par uid\tab | \tab \u25991?\u26412?\tab | \tab \u23458?\u25143?\u21807?\u19968?\u26631?\u-29754?\tab | \tab 10001
+\par trade_amount\tab | \tab \u25968?\u20540?\tab | \tab \u20132?\u26131?\u-28207?\u-26467?\tab | \tab 12000
+\par
+\par
+\par\b\fs26 \u25512?\u-31920?\u21487?\u-28663?\b0\fs22\par
+\par
+\par\b \u23383?\u27573?\u21517?\tab | \tab \u31867?\u22411?\tab | \tab \u-29708?\u26126?\tab | \tab \u31034?\u20363?\b0
+\par transaction_id\tab | \tab \u25991?\u26412?\tab | \tab \u20132?\u26131?\u21807?\u19968?\u32534?\u21495?\u-248?\u24378?\u28872?\u24314?\u-29778?\u22635?\u-247?\tab | \tab T001
+\par month\tab | \tab \u25991?\u26412?\tab | \tab \u26376?\u20221?\u-248?YYYY-MM\u-247?\tab | \tab 2026-03
+\par trade_date\tab | \tab \u26085?\u26399?\tab | \tab \u20132?\u26131?\u26085?\u26399?\tab | \tab 2026-03-01
+\par trade_type\tab | \tab \u25991?\u26412?\tab | \tab \u20132?\u26131?\u31867?\u22411?\tab | \tab stock
+\par trade_category\tab | \tab \u25991?\u26412?\tab | \tab \u20132?\u26131?\u20998?\u31867?\tab | \tab equity
+\par market\tab | \tab \u25991?\u26412?\tab | \tab \u24066?\u22330?\tab | \tab NZ
+\par trading_volume\tab | \tab \u25968?\u20540?\tab | \tab \u20132?\u26131?\u-28209?\tab | \tab 15000
+\par currency\tab | \tab \u25991?\u26412?\tab | \tab \u24065?\u31181?\tab | \tab USD
+\par
+\par
+\par \u-24872?\u-29788?\u-30644?\u20026?\u-230?
+\par
+\par\li720\tx720 \u8226?\tab currency \u32570?\u22833?\u26102?\u-24872?\u-29788? USD\u12290?\li0
+\par\li720\tx720 \u8226?\tab month \u32570?\u22833?\u19988? trade_date \u26377?\u20540?\u26102?\u-244?\u31995?\u32479?\u-32278?\u21160?\u30001?\u26085?\u26399?\u25512?\u23548?\u26376?\u20221?\u12290?\li0
+\par
+\par
+\par
+\par\b\fs30 2.3 customer_assets\u-248?\u23458?\u25143?\u-29372?\u20135?\u24555?\u29031?\u-247?\b0\fs22\par
+\par
+\par\b\fs26 \u24517?\u22635?\b0\fs22\par
+\par
+\par\b \u23383?\u27573?\u21517?\tab | \tab \u31867?\u22411?\tab | \tab \u-29708?\u26126?\tab | \tab \u31034?\u20363?\b0
+\par uid\tab | \tab \u25991?\u26412?\tab | \tab \u23458?\u25143?\u21807?\u19968?\u26631?\u-29754?\tab | \tab 10001
+\par month\tab | \tab \u25991?\u26412?\tab | \tab \u26376?\u20221?\u-248?YYYY-MM\u-247?\tab | \tab 2026-03
+\par
+\par
+\par\b\fs26 \u25512?\u-31920?\u21487?\u-28663?\b0\fs22\par
+\par
+\par\b \u23383?\u27573?\u21517?\tab | \tab \u31867?\u22411?\tab | \tab \u-29708?\u26126?\tab | \tab \u31034?\u20363?\b0
+\par net_assets\tab | \tab \u25968?\u20540?\tab | \tab \u20928?\u-29372?\u20135?\tab | \tab 125000
+\par deposit_amount\tab | \tab \u25968?\u20540?\tab | \tab \u20837?\u-28207?\u-28207?\u-26467?\tab | \tab 10000
+\par withdrawal_amount\tab | \tab \u25968?\u20540?\tab | \tab \u20986?\u-28207?\u-28207?\u-26467?\tab | \tab 2000
+\par trading_volume\tab | \tab \u25968?\u20540?\tab | \tab \u20132?\u26131?\u-28209?\tab | \tab 15000
+\par currency\tab | \tab \u25991?\u26412?\tab | \tab \u24065?\u31181?\tab | \tab USD
+\par snapshot_date\tab | \tab \u26085?\u26399?\tab | \tab \u24555?\u29031?\u26085?\u26399?\tab | \tab 2026-03-31
+\par stocks_pct\tab | \tab \u25968?\u20540?\tab | \tab \u-32607?\u31080?\u-28339?\u32622?\u27604?\u20363?\u-248?AUC \u20998?\u24067?\u25512?\u-31920?\u-247?\tab | \tab 45
+\par options_pct\tab | \tab \u25968?\u20540?\tab | \tab \u26399?\u26435?\u-28339?\u32622?\u27604?\u20363?\u-248?AUC \u20998?\u24067?\u25512?\u-31920?\u-247?\tab | \tab 25
+\par futures_pct\tab | \tab \u25968?\u20540?\tab | \tab \u26399?\u-29401?\u-28339?\u32622?\u27604?\u20363?\u-248?AUC \u20998?\u24067?\u25512?\u-31920?\u-247?\tab | \tab 15
+\par funds_pct\tab | \tab \u25968?\u20540?\tab | \tab \u22522?\u-28207?\u-28339?\u32622?\u27604?\u20363?\u-248?AUC \u20998?\u24067?\u25512?\u-31920?\u-247?\tab | \tab 15
+\par
+\par
+\par \u-24872?\u-29788?\u-30644?\u20026?\u-230?
+\par
+\par\li720\tx720 \u8226?\tab currency \u32570?\u22833?\u26102?\u-24872?\u-29788? USD\u12290?\li0
+\par
+\par
+\par
+\par\b\fs30 2.4 \u25490?\u21517?\u-29708?\u26126?\u-248?\u26080?\u-26880?\u22635?\u25253?\u-247?\b0\fs22\par
+\par
+\par\li720\tx720 \u8226?\tab \u24403?\u21069?\u29256?\u26412?\u26080?\u-26880?\u19994?\u21153?\u21333?\u29420?\u25552?\u20132? rankings sheet\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u31995?\u32479?\u20250?\u26681?\u25454? customer_assets \u30340? net_assets\u-248?AUC \u32500?\u24230?\u-247?\u21644? trading_volume\u-248?\u20132?\u26131?\u32500?\u24230?\u-247?\u-32278?\u21160?\u-29791?\u31639?\u25490?\u21517?\u12290?\li0
+\par\li720\tx720 \u8226?\tab \u-32027?\u21382?\u21490?\u27969?\u31243?\u20173?\u19978?\u20256? rankings\u-244?\u31995?\u32479?\u20860?\u23481?\u23548?\u20837?\u-244?\u20294?\u19981?\u20316?\u20026?\u19994?\u21153?\u20391?\u24517?\u22635?\u12290?\li0
+\par
+\par\b\fs30 3. \u21015?\u21517?\u20860?\u23481?\u-248?\u21382?\u21490?\u27169?\u26495?\u21035?\u21517?\u-247?\b0\fs22\par
+\par
+\par \u31995?\u32479?\u25903?\u25345?\u-28440?\u20998?\u21382?\u21490?\u23383?\u27573?\u-32278?\u21160?\u26144?\u23556?\u20026?\u26631?\u20934?\u23383?\u27573?\u12290?\u24314?\u-29778?\u19994?\u21153?\u-27265?\u26399?\u20351?\u29992?\u26631?\u20934?\u21015?\u21517?\u-244?\u20294?\u26087?\u27169?\u26495?\u21487?\u25353?\u19979?\u-30616?\u20860?\u23481?\u-230?
+\par
+\par\b \u26087?\u21015?\u21517?/\u21035?\u21517?\tab | \tab \u-32278?\u21160?\u26144?\u23556?\u20026?\b0
+\par customer_id\tab | \tab client_id
+\par client_uid, customer_uid, user_id, user_uid\tab | \tab uid
+\par client_name, customer_name\tab | \tab name
+\par trade_id, order_id\tab | \tab transaction_id
+\par amount, trade_value\tab | \tab trade_amount
+\par trade_volume, volume\tab | \tab trading_volume
+\par portfolio_value, account_balance, net_asset\tab | \tab net_assets
+\par asset_value\tab | \tab auc_value
+\par rank_change\tab | \tab previous_rank
+\par
+\par
+\par\b\fs30 4. \u25552?\u20132?\u21069?\u-29400?\u26816?\u28165?\u21333?\u-248?\u21457?\u19994?\u21153?\u-247?\b0\fs22\par
+\par
+\par \u25552?\u20132? Excel \u21069?\u-244?\u-29705?\u-28656?\u-26503?\u30830?\u-29788?\u-230?
+\par
+\par\li720\tx720 1.\tab \u25991?\u20214?\u25193?\u23637?\u21517?\u20026? .xlsx \u25110? .xlsm\u12290?\li0
+\par\li720\tx720 2.\tab \u27599?\u20010? sheet \u31532?\u19968?\u-30644?\u26159?\u26631?\u20934?\u23383?\u27573?\u21517?\u-244?\u26080?\u21512?\u24182?\u21333?\u20803?\u26684?\u12290?\li0
+\par\li720\tx720 3.\tab \u20851?\u-27346?\u24517?\u22635?\u21015?\u23436?\u25972?\u-244?\u19988?\u24517?\u22635?\u21015?\u21333?\u20803?\u26684?\u26080?\u31354?\u20540?\u12290?\li0
+\par\li720\tx720 4.\tab \u26085?\u26399?\u21015?\u32479?\u19968? YYYY-MM-DD\u-244?\u26376?\u20221?\u21015?\u32479?\u19968? YYYY-MM\u12290?\li0
+\par\li720\tx720 5.\tab \u25968?\u20540?\u21015?\u22343?\u20026?\u32431?\u25968?\u23383?\u-248?\u19981?\u-30335?\u24102?\u20013?\u25991?\u21333?\u20301?\u-247?\u12290?\li0
+\par\li720\tx720 6.\tab \u21516?\u19968?\u19994?\u21153?\u20027?\u-27346?\u26080?\u20914?\u31361?\u-248?\u20363?\u22914?\u21516?\u19968?\u20010? uid+month \u20165?\u20445?\u30041?\u19968?\u-30644?\u-29372?\u20135?\u24555?\u29031?\u-247?\u12290?\li0
+\par
+\par\b\fs30 5. \u24120?\u-30271?\u25253?\u-27367?\u19982?\u22788?\u29702?\b0\fs22\par
+\par
+\par\b \u25253?\u-27367?\u20449?\u24687?\u-248?\u31034?\u20363?\u-247?\tab | \tab \u21487?\u-32515?\u21407?\u22240?\tab | \tab \u22788?\u29702?\u24314?\u-29778?\b0
+\par Only .xlsx or .xlsm files are supported\tab | \tab \u25991?\u20214?\u31867?\u22411?\u19981?\u25903?\u25345?\tab | \tab \u21478?\u23384?\u20026? .xlsx
+\par Uploaded file is empty\tab | \tab \u19978?\u20256?\u20102?\u31354?\u25991?\u20214?\tab | \tab \u26816?\u26597?\u25991?\u20214?\u20869?\u23481?\u21518?\u-28211?\u20256?
+\par Missing required columns: ...\tab | \tab \u32570?\u23569?\u24517?\u22635?\u21015?\tab | \tab \u25353?\u26412?\u25991?\u26723?\u-30619?\u-24752?\u21015?\u21517?
+\par Row X: missing required values in ...\tab | \tab \u24517?\u22635?\u21015?\u26377?\u31354?\u20540?\tab | \tab \u-30619?\u-24752?\u-29723?\u-30644?\u23383?\u27573?
+\par field must be numeric\tab | \tab \u25968?\u20540?\u21015?\u21547?\u-26786?\u25968?\u23383?\tab | \tab \u28165?\u27927?\u20026?\u32431?\u25968?\u23383?
+\par field must be a valid date\tab | \tab \u26085?\u26399?\u26684?\u24335?\u19981?\u21487?\u-30237?\u26512?\tab | \tab \u25913?\u20026?\u26631?\u20934?\u26085?\u26399?\u26684?\u24335?
+\par Unable to infer dataset type...\tab | \tab sheet \u21517?\u21644?\u23383?\u27573?\u22343?\u26080?\u27861?\u-29754?\u21035?\tab | \tab \u20351?\u29992?\u26631?\u20934? sheet \u21517?\u24182?\u-30619?\u-24752?\u20851?\u-27346?\u21015?
+\par
+\par
+\par
+\par
+\par \u22914?\u-26880?\u19994?\u21153?\u20391?\u27169?\u26495?\u25991?\u20214?\u-248?\u20165?\u-30616?\u22836?\u-247?\u-244?\u24314?\u-29778?\u22522?\u20110?\u26412?\u-29708?\u26126?\u20070?\u29983?\u25104?\u24182?\u32479?\u19968?\u19979?\u21457?\u-244?\u-28545?\u20813?\u22810?\u29256?\u26412?\u27169?\u26495?\u24182?\u-30644?\u12290?
+}

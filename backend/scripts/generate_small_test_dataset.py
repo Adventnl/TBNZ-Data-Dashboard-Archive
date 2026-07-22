@@ -1,0 +1,463 @@
+from pathlib import Path
+
+import pandas as pd
+
+
+def generate_small_test_excel(output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    customers = pd.DataFrame(
+        [
+            {
+                "client_id": "C9001",
+                "name": "Alice Wang",
+                "uid": "20001",
+                "gender": "F",
+                "location": "Auckland",
+                "nationality": "NZ",
+                "client_type": "HNW",
+                "monthly_net_assets_usd": 285000,
+                "monthly_trade_count": 18,
+                "trade_category": "stock",
+                "tags": "HNW,S-Class",
+                "stocks_pct": 62,
+                "options_pct": 18,
+                "futures_pct": 12,
+                "funds_pct": 8,
+            },
+            {
+                "client_id": "C9002",
+                "name": "Ben Chen",
+                "uid": "20002",
+                "gender": "M",
+                "location": "Wellington",
+                "nationality": "NZ",
+                "client_type": "Frequent Trader",
+                "monthly_net_assets_usd": 110000,
+                "monthly_trade_count": 24,
+                "trade_category": "futures",
+                "tags": "Frequent Trader",
+                "stocks_pct": 42,
+                "options_pct": 25,
+                "futures_pct": 23,
+                "funds_pct": 10,
+            },
+            {
+                "client_id": "C9003",
+                "name": "Cathy Liu",
+                "uid": "20003",
+                "gender": "F",
+                "location": "Christchurch",
+                "nationality": "NZ",
+                "client_type": "Inactive",
+                "monthly_net_assets_usd": 28000,
+                "monthly_trade_count": 1,
+                "trade_category": "stock",
+                "tags": "Inactive",
+                "stocks_pct": 55,
+                "options_pct": 10,
+                "futures_pct": 8,
+                "funds_pct": 27,
+            },
+            {
+                "client_id": "C9004",
+                "name": "David Zhao",
+                "uid": "20004",
+                "gender": "M",
+                "location": "Hamilton",
+                "nationality": "NZ",
+                "client_type": "New",
+                "monthly_net_assets_usd": 62000,
+                "monthly_trade_count": 7,
+                "trade_category": "fund",
+                "tags": "New",
+                "stocks_pct": 40,
+                "options_pct": 14,
+                "futures_pct": 6,
+                "funds_pct": 40,
+            },
+            {
+                "client_id": "C9005",
+                "name": "Emma Xu",
+                "uid": "20005",
+                "gender": "F",
+                "location": "Auckland",
+                "nationality": "NZ",
+                "client_type": "S-Class",
+                "monthly_net_assets_usd": 215000,
+                "monthly_trade_count": 16,
+                "trade_category": "option",
+                "tags": "S-Class,HNW",
+                "stocks_pct": 47,
+                "options_pct": 29,
+                "futures_pct": 11,
+                "funds_pct": 13,
+            },
+            {
+                "client_id": "C9006",
+                "name": "Frank Lin",
+                "uid": "20006",
+                "gender": "M",
+                "location": "Dunedin",
+                "nationality": "NZ",
+                "client_type": "Core",
+                "monthly_net_assets_usd": 48000,
+                "monthly_trade_count": 9,
+                "trade_category": "stock",
+                "tags": "Core",
+                "stocks_pct": 58,
+                "options_pct": 12,
+                "futures_pct": 10,
+                "funds_pct": 20,
+            },
+        ]
+    )
+
+    transactions = pd.DataFrame(
+        [
+            {
+                "transaction_id": "T900001",
+                "uid": "20001",
+                "trade_amount": 85000,
+                "trade_type": "stock",
+                "trade_date": "2026-03-04",
+                "market": "NZ",
+                "currency": "NZD",
+                "month": "2026-03",
+            },
+            {
+                "transaction_id": "T900002",
+                "uid": "20001",
+                "trade_amount": 42000,
+                "trade_type": "option",
+                "trade_date": "2026-02-18",
+                "market": "US",
+                "currency": "USD",
+                "month": "2026-02",
+            },
+            {
+                "transaction_id": "T900003",
+                "uid": "20002",
+                "trade_amount": 26000,
+                "trade_type": "futures",
+                "trade_date": "2026-03-06",
+                "market": "HK",
+                "currency": "HKD",
+                "month": "2026-03",
+            },
+            {
+                "transaction_id": "T900004",
+                "uid": "20003",
+                "trade_amount": 1500,
+                "trade_type": "stock",
+                "trade_date": "2026-01-15",
+                "market": "NZ",
+                "currency": "NZD",
+                "month": "2026-01",
+            },
+            {
+                "transaction_id": "T900005",
+                "uid": "20004",
+                "trade_amount": 12000,
+                "trade_type": "fund",
+                "trade_date": "2026-03-11",
+                "market": "AU",
+                "currency": "AUD",
+                "month": "2026-03",
+            },
+            {
+                "transaction_id": "T900006",
+                "uid": "20005",
+                "trade_amount": 54000,
+                "trade_type": "option",
+                "trade_date": "2026-03-08",
+                "market": "US",
+                "currency": "USD",
+                "month": "2026-03",
+            },
+        ]
+    )
+
+    activities = pd.DataFrame(
+        [
+            {
+                "activity_id": "A001",
+                "name": "Auckland Growth Expo",
+                "description": "Community campaign for local onboarding",
+                "date_start": "2026-03-10",
+                "date_end": "2026-03-12",
+                "location": "Auckland",
+                "status": "ongoing",
+                "total_visitors": 1200,
+                "new_signups": 90,
+                "conversion_rate": 7.5,
+            },
+            {
+                "activity_id": "A002",
+                "name": "Wellington Webinar",
+                "description": "Online product introduction",
+                "date_start": "2026-02-20",
+                "date_end": "2026-02-20",
+                "location": "Wellington",
+                "status": "completed",
+                "total_visitors": 800,
+                "new_signups": 46,
+                "conversion_rate": 5.75,
+            },
+        ]
+    )
+
+    activity_tracking = pd.DataFrame(
+        [
+            {
+                "tracking_id": "AT9001",
+                "activity_id": "A001",
+                "sequence": 1,
+                "channel_source": "offline",
+                "invite_code": "INV-AKL-01",
+                "channel": "expo",
+                "client_type": "New",
+                "client_name": "David Zhao",
+                "client_uid": "20004",
+                "registration_date": "2026-03-10",
+                "registration_amount": 1200,
+                "deposit_status": "yes",
+                "attribution_result": "matched",
+            },
+            {
+                "tracking_id": "AT9002",
+                "activity_id": "A001",
+                "sequence": 2,
+                "channel_source": "referral",
+                "invite_code": "INV-AKL-02",
+                "channel": "friend",
+                "client_type": "Core",
+                "client_name": "Frank Lin",
+                "client_uid": "20006",
+                "registration_date": "2026-03-11",
+                "registration_amount": 600,
+                "deposit_status": "pending",
+                "attribution_result": "matched",
+            },
+            {
+                "tracking_id": "AT9003",
+                "activity_id": "A001",
+                "sequence": 3,
+                "channel_source": "wechat",
+                "invite_code": "INV-AKL-03",
+                "channel": "social",
+                "client_type": "Frequent Trader",
+                "client_name": "Ben Chen",
+                "client_uid": "20002",
+                "registration_date": "2026-03-12",
+                "registration_amount": 2600,
+                "deposit_status": "yes",
+                "attribution_result": "matched",
+            },
+            {
+                "tracking_id": "AT9004",
+                "activity_id": "A002",
+                "sequence": 1,
+                "channel_source": "webinar",
+                "invite_code": "INV-WLG-01",
+                "channel": "online",
+                "client_type": "New",
+                "client_name": "Cathy Liu",
+                "client_uid": "20003",
+                "registration_date": "2026-02-20",
+                "registration_amount": 300,
+                "deposit_status": "yes",
+                "attribution_result": "matched",
+            },
+        ]
+    )
+
+    customer_assets = pd.DataFrame(
+        [
+            {
+                "uid": "20001",
+                "month": "2026-02",
+                "net_assets": 250000,
+                "deposit_amount": 20000,
+                "withdrawal_amount": 4000,
+                "trading_volume": 90000,
+                "currency": "USD",
+                "stocks_pct": 60,
+                "options_pct": 18,
+                "futures_pct": 14,
+                "funds_pct": 8,
+            },
+            {
+                "uid": "20001",
+                "month": "2026-03",
+                "net_assets": 285000,
+                "deposit_amount": 23000,
+                "withdrawal_amount": 5000,
+                "trading_volume": 120000,
+                "currency": "USD",
+                "stocks_pct": 58,
+                "options_pct": 20,
+                "futures_pct": 14,
+                "funds_pct": 8,
+            },
+            {
+                "uid": "20002",
+                "month": "2026-02",
+                "net_assets": 98000,
+                "deposit_amount": 7000,
+                "withdrawal_amount": 2500,
+                "trading_volume": 42000,
+                "currency": "NZD",
+                "stocks_pct": 44,
+                "options_pct": 24,
+                "futures_pct": 22,
+                "funds_pct": 10,
+            },
+            {
+                "uid": "20002",
+                "month": "2026-03",
+                "net_assets": 110000,
+                "deposit_amount": 9000,
+                "withdrawal_amount": 2800,
+                "trading_volume": 58000,
+                "currency": "NZD",
+                "stocks_pct": 42,
+                "options_pct": 26,
+                "futures_pct": 22,
+                "funds_pct": 10,
+            },
+            {
+                "uid": "20005",
+                "month": "2026-02",
+                "net_assets": 190000,
+                "deposit_amount": 14000,
+                "withdrawal_amount": 4500,
+                "trading_volume": 67000,
+                "currency": "USD",
+                "stocks_pct": 50,
+                "options_pct": 27,
+                "futures_pct": 11,
+                "funds_pct": 12,
+            },
+            {
+                "uid": "20005",
+                "month": "2026-03",
+                "net_assets": 215000,
+                "deposit_amount": 18000,
+                "withdrawal_amount": 4700,
+                "trading_volume": 83000,
+                "currency": "USD",
+                "stocks_pct": 47,
+                "options_pct": 29,
+                "futures_pct": 11,
+                "funds_pct": 13,
+            },
+        ]
+    )
+
+    rankings = pd.DataFrame(
+        [
+            {
+                "uid": "20001",
+                "month": "2026-03",
+                "dimension": "auc",
+                "rank": 12,
+                "previous_rank": 15,
+                "client_type": "HNW",
+                "channel_source": "referral",
+                "auc_share_pct": 14.2,
+                "trading_volume": 120000,
+                "auc_value": 285000,
+            },
+            {
+                "uid": "20005",
+                "month": "2026-03",
+                "dimension": "auc",
+                "rank": 20,
+                "previous_rank": 22,
+                "client_type": "S-Class",
+                "channel_source": "wechat",
+                "auc_share_pct": 10.8,
+                "trading_volume": 83000,
+                "auc_value": 215000,
+            },
+            {
+                "uid": "20002",
+                "month": "2026-03",
+                "dimension": "auc",
+                "rank": 34,
+                "previous_rank": 38,
+                "client_type": "Frequent Trader",
+                "channel_source": "webinar",
+                "auc_share_pct": 5.5,
+                "trading_volume": 58000,
+                "auc_value": 110000,
+            },
+            {
+                "uid": "20001",
+                "month": "2026-03",
+                "dimension": "trading",
+                "rank": 9,
+                "previous_rank": 14,
+                "client_type": "HNW",
+                "channel_source": "referral",
+                "auc_share_pct": 14.2,
+                "trading_volume": 120000,
+                "auc_value": 285000,
+            },
+            {
+                "uid": "20002",
+                "month": "2026-03",
+                "dimension": "trading",
+                "rank": 18,
+                "previous_rank": 21,
+                "client_type": "Frequent Trader",
+                "channel_source": "webinar",
+                "auc_share_pct": 5.5,
+                "trading_volume": 58000,
+                "auc_value": 110000,
+            },
+            {
+                "uid": "20005",
+                "month": "2026-03",
+                "dimension": "trading",
+                "rank": 26,
+                "previous_rank": 24,
+                "client_type": "S-Class",
+                "channel_source": "wechat",
+                "auc_share_pct": 10.8,
+                "trading_volume": 83000,
+                "auc_value": 215000,
+            },
+        ]
+    )
+
+    with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+        customers.to_excel(writer, sheet_name="customers", index=False)
+        transactions.to_excel(writer, sheet_name="transactions", index=False)
+        activities.to_excel(writer, sheet_name="activities", index=False)
+        activity_tracking.to_excel(writer, sheet_name="activity_tracking", index=False)
+        customer_assets.to_excel(writer, sheet_name="customer_assets", index=False)
+        rankings.to_excel(writer, sheet_name="rankings", index=False)
+
+    row_counts = {
+        "customers": len(customers),
+        "transactions": len(transactions),
+        "activities": len(activities),
+        "activity_tracking": len(activity_tracking),
+        "customer_assets": len(customer_assets),
+        "rankings": len(rankings),
+    }
+    total_rows = sum(row_counts.values())
+
+    print(f"Small test Excel generated: {output_path}")
+    print("Row counts:")
+    for key, value in row_counts.items():
+        print(f"- {key}: {value}")
+    print(f"- total: {total_rows}")
+
+
+if __name__ == "__main__":
+    project_root = Path(__file__).resolve().parents[2]
+    target = project_root / "data" / "sample_import_small.xlsx"
+    generate_small_test_excel(target)

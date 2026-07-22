@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+.data-ingest-page {
+  min-height: 100vh;
+  background: #f6f7f8;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f1f1f;
+}
+
+.ingest-card,
+.history-table-card {
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.ingest-card {
+  padding: 22px;
+}
+
+.ingest-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ingest-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.ingest-subtitle {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #7a7a7a;
+  max-width: 480px;
+}
+
+.upload-icon-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  background: #fafafa;
+  color: #f4c400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-icon-btn:hover {
+  background: #fffdf4;
+  border-color: #f4c400;
+}
+
+.upload-dropzone {
+  margin-top: 18px;
+  border: 1.5px dashed #d9d9d9;
+  border-radius: 18px;
+  min-height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fcfcfc;
+  transition: all 0.2s ease;
+}
+
+.upload-dropzone.dragging {
+  border-color: #f4c400;
+  background: #fffdf5;
+}
+
+.upload-dropzone-inner {
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.upload-file-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #f4c400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-main-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #353535;
+}
+
+.upload-desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.upload-primary-btn {
+  margin-top: 22px;
+  min-width: 104px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background: #f4c400;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 18px;
+  transition: all 0.2s ease;
+}
+
+.upload-primary-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.upload-primary-btn:active {
+  transform: scale(0.98);
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.history-section {
+  margin-top: 22px;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  gap: 16px;
+}
+
+.history-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.history-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f4c400;
+}
+
+.history-title {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #555;
+}
+
+
+.history-table-card {
+  overflow: hidden;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table thead th {
+  text-align: left;
+  padding: 16px 16px;
+  font-size: 11px;
+  color: #8b8b8b;
+  font-weight: 700;
+  background: #fbfbfb;
+  border-bottom: 1px solid #efefef;
+}
+
+.history-table tbody td {
+  padding: 16px 16px;
+  font-size: 14px;
+  color: #444;
+  vertical-align: middle;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.file-name {
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+}
+
+.file-tag {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #9a9a9a;
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.status-success {
+  background: #edf9ee;
+  color: #30a14e;
+}
+
+.status-progress {
+  background: #fff8df;
+  color: #a17a00;
+}
+
+.status-failed {
+  background: #fff1f0;
+  color: #d9363e;
+}
+
+@media (max-width: 900px) {
+  .history-table-card {
+    overflow-x: auto;
+  }
+
+  .history-table {
+    min-width: 860px;
+  }
+}
+
+@media (max-width: 768px) {
+  .data-ingest-page {
+    padding: 14px;
+  }
+
+  .ingest-card {
+    padding: 18px;
+  }
+
+  .ingest-card-header {
+    align-items: flex-start;
+  }
+
+  .upload-dropzone {
+    min-height: 260px;
+  }
+
+  .history-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

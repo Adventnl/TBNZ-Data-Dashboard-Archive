@@ -1,0 +1,50 @@
+.trading-page {
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.chart-card {
+  border-radius: var(--radius-md) !important;
+}
+
+.chart-card .ant-card-head {
+  border-bottom: none;
+  padding: 16px 20px 0;
+}
+
+.chart-card .ant-card-head-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rank-1 { background: #FFCC00; color: #1A1A1A; }
+.rank-2 { background: #C0C0C0; }
+.rank-3 { background: #CD7F32; }
+.rank-badge:not(.rank-1):not(.rank-2):not(.rank-3) {
+  background: #E8E8E8;
+  color: #666;
+}
+
+.chart-loading-wrap {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trading-page .ant-table-wrapper {
+  overflow-x: auto;
+}

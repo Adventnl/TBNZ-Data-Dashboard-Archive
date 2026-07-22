@@ -1,0 +1,83 @@
+.activities-page {
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+/* Activity Timeline */
+.activity-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-timeline-item {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.activity-timeline-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.activity-timeline-item.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-bg);
+  box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.15);
+}
+
+.timeline-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Activity Detail */
+.activity-detail-card {
+  border-radius: var(--radius-md) !important;
+}
+
+.activity-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.activity-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.activity-stat-value {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+/* Tracking Card */
+.tracking-card {
+  border-radius: var(--radius-md) !important;
+}
+
+.tracking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-border-light);
+}

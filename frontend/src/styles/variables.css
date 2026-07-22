@@ -1,0 +1,108 @@
+/* ============================================
+   Tiger Brokers NZ - Design System Tokens
+   Based on Figma Design
+   ============================================ */
+
+:root {
+  /* === Brand Colors === */
+  --color-primary: #FFCC00;          /* Tiger yellow - main accent */
+  --color-primary-light: #FFF3B0;    /* Light yellow for backgrounds */
+  --color-primary-dark: #E6B800;     /* Darker yellow for hover */
+  --color-primary-bg: #FFFBEA;       /* Very light yellow background */
+
+  /* === Neutral Colors === */
+  --color-text-primary: #1A1A1A;     /* Primary text */
+  --color-text-secondary: #666666;   /* Secondary text */
+  --color-text-tertiary: #999999;    /* Tertiary/placeholder text */
+  --color-text-white: #FFFFFF;
+
+  /* === Background Colors === */
+  --color-bg-page: #F5F5F5;          /* Page background */
+  --color-bg-card: #FFFFFF;          /* Card background */
+  --color-bg-sidebar: #FFFFFF;       /* Sidebar background */
+  --color-bg-hover: #FAFAFA;         /* Hover state background */
+  --color-bg-active: #FFF8E1;        /* Active sidebar item */
+
+  /* === Border Colors === */
+  --color-border: #E8E8E8;
+  --color-border-light: #F0F0F0;
+
+  /* === Status Colors === */
+  --color-success: #52C41A;
+  --color-success-bg: #F6FFED;
+  --color-danger: #FF4D4F;
+  --color-danger-bg: #FFF2F0;
+  --color-warning: #FAAD14;
+  --color-warning-bg: #FFFBE6;
+  --color-info: #1890FF;
+
+  /* === Signal Colors === */
+  --color-signal-red: #FF4D4F;       /* Urgent/abnormal */
+  --color-signal-orange: #FF8C00;    /* Warning */
+  --color-signal-green: #52C41A;     /* Normal/positive */
+
+  /* === Chart Colors === */
+  --color-chart-yellow: #FFCC00;
+  --color-chart-yellow-light: #FFE066;
+  --color-chart-gray: #D9D9D9;
+  --color-chart-blue: #4A90D9;
+  --color-chart-green: #52C41A;
+  --color-chart-orange: #FF8C00;
+
+  /* === Tag Colors === */
+  --color-tag-hnw: #FFCC00;
+  --color-tag-hnw-bg: #FFF8E1;
+  --color-tag-sclass: #722ED1;
+  --color-tag-sclass-bg: #F9F0FF;
+  --color-tag-inactive: #999999;
+  --color-tag-inactive-bg: #F5F5F5;
+  --color-tag-frequent: #1890FF;
+  --color-tag-frequent-bg: #E6F7FF;
+  --color-tag-new: #52C41A;
+  --color-tag-new-bg: #F6FFED;
+
+  /* === Typography === */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-hero: 40px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* === Spacing === */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-xxxl: 48px;
+
+  /* === Border Radius === */
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-round: 50%;
+
+  /* === Shadows === */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-base: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* === Layout === */
+  --sidebar-width: 200px;
+  --header-height: 64px;
+  --card-padding: 24px;
+}

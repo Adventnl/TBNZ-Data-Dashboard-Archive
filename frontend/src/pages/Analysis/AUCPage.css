@@ -1,0 +1,106 @@
+.auc-page {
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.auc-tabs > .ant-tabs-nav {
+  margin-top: -8px;
+  margin-bottom: 20px !important;
+}
+
+.auc-tabs > .ant-tabs-nav .ant-tabs-tab {
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.chart-card {
+  border-radius: var(--radius-md) !important;
+}
+
+.chart-card .ant-card-head {
+  border-bottom: none;
+  padding: 16px 20px 0;
+}
+
+.chart-card .ant-card-head-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.auc-page .stat-card {
+  height: 100%;
+}
+
+.auc-page .stat-card .ant-card-body {
+  min-height: 126px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.auc-page .stat-card .stat-card-inner {
+  width: 100%;
+}
+
+.tier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tier-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tier-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tier-bar-bg {
+  height: 12px;
+  background: var(--color-border-light);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tier-bar {
+  height: 100%;
+  border-radius: 6px;
+  min-width: 4px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.view-all-link {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+.allocation-detail-item {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allocation-detail-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.allocation-detail-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}

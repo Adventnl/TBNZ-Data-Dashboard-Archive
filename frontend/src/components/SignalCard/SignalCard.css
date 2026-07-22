@@ -1,0 +1,136 @@
+
+
+.signal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.signal-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 2;
+}
+
+/* =========================
+   card mode
+========================= */
+
+.signal-grid-card {
+  padding: 20px 16px;
+  min-height: 220px;
+  background: #fff;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.signal-grid-card:hover {
+  background: #fafafa;
+}
+
+.signal-grid-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.signal-grid-user {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.signal-grid-avatar {
+  flex-shrink: 0;
+}
+
+.signal-grid-user-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.signal-grid-name {
+  font-size: 15px;
+  line-height: 1.35;
+  color: #262626;
+  word-break: break-word;
+}
+
+.signal-grid-uid {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.signal-grid-arrow {
+  color: #bfbfbf;
+  font-size: 14px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.signal-grid-tags {
+  margin-bottom: 14px;
+  min-height: 28px;
+}
+
+.signal-grid-signal-box {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fcfcfc;
+}
+
+.signal-grid-signal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.signal-grid-signal-title .ant-typography {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.signal-grid-signal-desc {
+  display: block;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #8c8c8c;
+}
+
+
+.follow-btn {
+  height: 30px !important;
+  padding: 0 10px !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  border-radius: 10px !important;
+
+  background: #ffcc00 !important;
+  border-color: #ffcc00 !important;
+  color: #262626 !important;
+}
+
+.follow-btn:hover,
+.follow-btn:focus {
+  background: #f5c400 !important;
+  border-color: #f5c400 !important;
+  color: #262626 !important;
+}
